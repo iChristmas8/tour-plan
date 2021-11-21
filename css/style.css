@@ -505,7 +505,6 @@ template {
 }
 
 .hotel {
-  margin-top: 23px;
   margin-bottom: 70px;
 }
 
@@ -559,6 +558,7 @@ template {
 .stars {
   -ms-flex-preferred-size: 100%;
       flex-basis: 100%;
+  padding-top: 24px;
 }
 
 .offer {
@@ -574,6 +574,7 @@ template {
   max-width: 65px;
   min-height: 45px;
   text-align: center;
+  margin-top: 29px;
   color: #fff;
   background-color: #EC1F46;
   border-radius: 4px;
@@ -581,11 +582,13 @@ template {
 
 .rating__text {
   font-size: 8px;
+  font-weight: 600;
   line-height: 10px;
 }
 
 .rating__counter {
   font-size: 14px;
+  font-weight: bold;
   line-height: 18px;
 }
 
@@ -607,7 +610,8 @@ template {
     padding-bottom: 30px;
   }
   .navbar__search {
-    margin-left: auto;
+    margin-left: 47px;
+    margin-right: 73px;
   }
   .navbar-menu {
     padding-top: 22px;
@@ -617,18 +621,31 @@ template {
     font-size: 12px;
     line-height: 15px;
   }
+  .navbar-menu__item {
+    margin-right: 25px;
+  }
+  .navbar-menu__item__item-mr0 {
+    margin-right: 0px;
+  }
   .search__input {
     width: 340px;
+  }
+  .hotel {
+    margin-top: 0px;
   }
 }
 
 @media (max-width: 768px) {
   .container {
     max-width: 576px;
-    width: 92%;
+    width: 90%;
   }
   .navbar__search, .navbar-menu, .navbar__user {
     display: none;
+  }
+  .navbar-top {
+    padding-top: 28px;
+    padding-bottom: 28px;
   }
   .menu-button {
     display: -webkit-box;
@@ -673,7 +690,6 @@ template {
     width: 100%;
   }
   .hotel-info__name {
-    margin-top: 10px;
     margin-bottom: 0;
   }
   .hotel-info__rating {
@@ -684,6 +700,7 @@ template {
         -ms-flex-order: -1;
             order: -1;
     margin-left: 0;
+    margin-top: 5px;
   }
   .hotel-description {
     width: 280px;
