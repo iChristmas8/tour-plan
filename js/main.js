@@ -8,4 +8,9 @@ const swiper = new Swiper('.swiper', {
       prevEl: '.slider-button--prev',
     },
   
+    keyboard: {
+      enabled: true,
+      onlyInViewport: true,
+      pageUpDown: true,
+    }  
   });
