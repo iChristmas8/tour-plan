@@ -14,3 +14,4 @@ const swiper = new Swiper('.swiper', {
       pageUpDown: true,
     }  
   });
+  
