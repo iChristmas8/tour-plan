@@ -21,7 +21,7 @@
 }
 .swiper {
   /* margin-left:auto удалил 25.11 */
-  margin-right: 30px;
+  margin-right: 0px;
   position: relative;
   overflow: hidden;
   list-style: none;
