@@ -173,7 +173,7 @@
               </a>
             </div>
             <!-- /.call-center -->
-            <button class="button booking__button">View Other Options</button>
+            <button data-toggle="modal" class="button booking__button">View Other Options</button>
             <!-- /.button booking__button -->
           </div>
           <!-- /.booking -->
@@ -364,7 +364,7 @@
             </li>
           </ul>
         </div>
-        <div class="footer__list footer_additional">
+        <div class="footer__list footer__additional">
           <h3 class="footer__title">ADDITIONAL INFORMATION</h3>
           <ul class="footer__ul">
             <li class="footer__item">
@@ -422,7 +422,7 @@
           </div>
         <!-- /.footer__list -->
         <div class="footer__contact-details">
-          <h3 class="footer__title footer__title--mb-3">Contact Details</h3>
+          <h3 class="footer__title footer__title--mb-4">Contact Details</h3>
           <p class="footer__text">Feel free to contact us by phone, email or by our contact form</p>
           <ul class="footer__ul">
             <li class="footer__item footer__item--mb-2">
@@ -437,7 +437,7 @@
               </div>
               Tel (business hours) : 269 1500 <br> 
               Tel (hotline) Monday - Saturday: 52-56-61-38 (08:00 am – 20:00 pm) <br>
-              Tel (hotline) Sunday:52-56-61-38 (08:00 am – 14:00 pm)
+              Tel (hotline) Sunday: 52-56-61-38 (08:00 am – 14:00 pm)
             </li>
             <li class="footer__item footer__item--mb-2">
               <div class="footer__icon-wrapper">
@@ -450,12 +450,12 @@
         <!-- /.footer__contact-details -->
         <div class="footer__contact-form">
           <h3 class="footer__title footer__title--mb-3">Send us a message</h3>
-          <form action="#" class="footer__form">
+          <form action="send.php" method="POST" class="footer__form">
             <input type="text" class="input footer__input"
-            placeholder="Your Full Name*">
+            placeholder="Your Full Name*" name="name">
             <input type="text" class="input footer__input"
-            placeholder="Phone Number*">
-            <textarea class="footer__message" cols="30" rows="10" placeholder="Message"></textarea>
+            placeholder="Phone Number*" name="phone">
+            <textarea class="message footer__message" cols="30" rows="10" placeholder="Message" name="message"></textarea>
             <button class="button footer__button">Send</button>
             <span class="footer__info">* Required Fields</span>
           </form>
@@ -467,6 +467,25 @@
     <!-- /.container -->
   </footer>
   <!-- /.footer -->
+  <div class="modal">
+    <div class="modal__overlay"></div>
+    <!-- /.modal__overlay -->
+    <div class="modal__dialog">
+      <a href="" class="modal__close"><img src="img/close.svg" alt="icon: close"></a>
+      <h3 class="modal__title modal__title--mb-3">Send us a message</h3>
+      <form action="send.php" method="POST" class="modal__form">
+        <input type="text" class="input modal__input" placeholder="Your Full Name*" name="name">
+        <input type="text" class="input modal__input" placeholder="Phone Number*" name="phone">
+        <input type="text" class="input modal__input" placeholder="Email*" name="email">
+        <textarea class="message modal__message" placeholder="Message" name="message"></textarea>
+        <button class="button modal__button">Send</button>
+        <span class="modal__info">* Required Fields</span>
+      </form>
+    </div>
+    <!-- /.modal__dialog -->
+  </div>
+  <!-- /.modal -->
+  <script src="js/jquery-3.6.0.min.js"></script>
   <script src="js/swiper-bundle.min.js"></script>
   <script src="js/main.js"></script>
 </body>
